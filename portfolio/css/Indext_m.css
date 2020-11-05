@@ -1,0 +1,392 @@
+@charset "UTF-8";
+body {
+    min-width: 769px;
+    overflow-x: hidden;
+}
+.white,
+.black {
+    width: 100%;
+    top: 0;
+}
+.white {
+    background: #020e1a;
+}
+.black {
+    background: #fff;
+}
+.white .main,
+.black .main {
+    flex-direction: row;
+}
+.white .main > li,
+.black .main > li {
+    width: 25%;
+    text-align: center;
+}.white .main > li .sub,
+.black .main > li .sub {
+    transform: translateY(-100vh);
+}
+.sec.two .boxs {
+    width: 100%;
+}
+.sec.two .boxs .box1 {
+    width: calc(50% - 12.5px);
+    order: 2;
+}
+.sec.two .boxs .box2 {
+    width: 100%;
+    height: 200px;
+    order: 1;
+    margin-right: 0;
+}
+.sec.two .boxs .box3 {
+    width: calc(50% - 12.5px);
+    order: 3;
+}
+.sec.two .lines {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 50px;
+}
+.sec.two .lines .line {
+    width: 380px;
+    flex-shrink: 0;
+}
+.sec.two .lines .line .photo::before {
+    background: rgba(0, 0, 0, .5);
+}
+.sec.two .lines .line .photo a,
+.sec.two .lines .line .photo a:visited  {
+    opacity: 1;
+}
+.sec .info {
+    width: 100%;
+}
+.sec.three .work {
+    width: calc(100% - 40px);
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.sec.three .work .left {
+    flex-shrink: 0;
+    width: 560px;
+    order: 2;
+}
+.sec.three .work .left::before {
+    left: auto;
+    right: 0;
+}
+.sec.three .work .left .link {
+    left: auto;
+    right: -15px;
+}
+.sec.three .work .left .photo2 {
+    left: -50px;
+}
+.sec.three .work .right {
+    flex-shrink: 0;
+    width: 480px;
+    order: 1;
+}
+.sec.three .work .right::before {
+    left: 0;
+}
+.sec.three .work .right h2 {
+    text-align: left;
+    margin-left: 30px;
+}
+.sec.four article {
+    width: 100%;
+    padding: 0 20px 50px;
+}
+.sec.four article .top {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.sec.four article .top .left,
+.sec.four article .top .right {
+    flex-shrink: 0;
+}
+.sec.four article .top .left {
+    flex-shrink: 0;
+    width: 418px;
+}
+.sec.four article .top .right {
+    flex-shrink: 0;
+    width: 600px;
+}
+.sec.four article .b_left {
+    width: 58%;
+    padding: 30px;
+    background: linear-gradient(-45deg, transparent 60px, #eee 0);
+}
+.sec.four article .b_left div p:last-of-type {
+    display: none;
+}
+.sec.four article .b_right {
+    width: 38%;
+    padding: 30px;
+}
+.sec.four article .b_right div span {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.sec.five::before {
+    width: 2px;
+}
+@media only screen and (max-width:768px) {
+    body {
+        min-width: 501px;
+    }
+    .white .main > li,
+    .black .main > li {
+        padding: 20px 10px;
+    }
+    .sec.one {
+        height: 800px;
+    }
+    .sec.two {
+        height: auto;
+        padding-top: 75px;
+    }
+    .sec.two .boxs {
+        margin-bottom: 25px;
+    }
+    .sec.two .boxs .box1,
+    .sec.two .boxs .box3 {
+        height: 180px;
+        margin-bottom: 0;
+    }
+    .sec.two .lines {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sec.two .lines .line {
+        height: auto;
+        margin-right: 0;
+        margin-top: 55px;
+    }
+    .sec.two .lines .lineA h2,
+    .sec.two .lines .lineC h2 {
+        position: absolute;
+        top: -55px;
+    }
+    .sec.two .lines .lineA .switch,
+    .sec.two .lines .lineC .switch {
+        top: -46px;
+    }
+    .sec.three .work {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+        overflow: hidden;
+    }
+    .sec.three .work .left {
+        width: 460px;
+        height: 550px;
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    .sec.three .work .left::before {
+        display: none;
+    }
+    .sec.three .work .left .photo1 {
+        position: relative;
+        left: 0;
+        width: 400px;
+    }
+    .sec.three .work .left .photo2 {
+        left: auto;
+        right: 0;
+        bottom: 50px;
+        position: absolute;
+    }
+    .sec.three .work .left .link {
+        right: auto;
+        left: 30px;
+        bottom: -10px;   
+    }
+    .sec.three .work .left .link div {
+        height: auto;
+    }
+    .sec.three .work .right {
+        width: 100%;
+        height: 600px;
+    }
+    .sec.three .work.three .right {
+        height: 550px;
+    }
+    .sec.four article .top {
+        height: auto;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .sec.four article .top .left {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 300px;
+    }
+    .sec.four article .top .circle {
+        bottom: auto;
+        top: 80px;
+    }
+    .sec.four article .top .left .i2 {
+        bottom: auto;
+        top: 220px;
+    }
+    .sec.four article .top .left .i3 {
+        bottom: auto;
+        top: 185px;
+    }
+    .sec.four article .top .right {
+        width: 100%;
+        height: auto;
+        padding: 25px 30px 0;
+        margin-top: 300px;
+    }
+    .sec.four article .top .right .text p:last-of-type span {
+        display: block;
+        margin-top: 15px;
+    }
+    .sec.four article .b_left {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .sec.four article .b_right {
+        width: 100%;
+    }
+    .sec.four article .b_right div span {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:500px) {
+    body {
+        min-width: 320px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+    h4 {
+        font-size: 2.2rem;
+    }
+    .white .main,
+    .black .main {
+        flex-wrap: wrap;
+    }
+    .white .main > li,
+    .black .main > li {
+        width: 50%;
+        padding: 10px;
+    }
+    .sec.two .boxs .box1,
+    .sec.two .boxs .box3 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .sec.two .boxs .box3 {
+        margin-top: 25px;
+    }
+    .sec.two .lines {
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+    .sec.two .lines .line {
+        width: 100%;
+    }
+    .sec.two .lines .lineA h2,
+    .sec.two .lines .lineB h2,
+    .sec.two .lines .lineC h2 {
+        top: -42px;
+        font-size: 2.6rem;
+    }
+    .sec.two .lines .line .switch {
+        width: 50px;
+        height: 26px;
+    }
+    .sec.two .lines .lineA .switch,
+    .sec.two .lines .lineB .switch,
+    .sec.two .lines .lineC .switch {
+        top: -36px;
+        right: 0;
+    }
+    .sec.two .lines .line .switch .slider:before {
+        width: 14px;
+        height: 14px;
+        bottom: 3px;
+    }
+    .sec.two .lines .line .switch input:checked + .slider:before {
+        transform: translateX(22px);
+    }
+    .sec.two .lines .line .photo a,
+    .sec.two .lines .line .photo a:visited {
+        font-size: 2.4rem;
+    }
+    .sec.three .work .left {
+        padding: 0;
+    }
+    .sec.three .work .left .photo1,
+    .sec.three .work.two .left .photo1,
+    .sec.three .work.three .left .photo1 {
+        width: 100%;
+        background-position-x: 20%;
+    }
+    .sec.three .work .left .photo2 {
+        display: none;
+    }
+    .sec.three .work .left .link {
+        left: 0;
+    }
+    .sec.three .work .right h2 {
+        margin-left: 0;
+    }
+    .sec.three .work .right ul li {
+        padding-left: 0;
+    }
+    .sec.three .work .right ul li:first-of-type {
+        padding-left: 0;
+    }
+    .sec.three .work .right .hash {
+        padding-left: 0;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .sec.three .work .right .color {
+        margin-left: 0;
+    }
+    .sec.four article .top .right {
+        padding: 25px 00;
+    }
+    .sec.four article .top .right .text p {
+        font-size: 1.6rem;
+    }
+    .sec.four article .top .right .text p:first-of-type {
+        display: none;
+    }
+    .sec.four article .top .right .text p:last-of-type span {
+        font-size: 2rem;
+    }
+    .sec.four article .b_left,
+    .sec.four article .b_right {
+        height: auto;
+        padding: 30px 10px;
+        overflow: hidden;
+    }
+    .sec.four article .b_right h4::before {
+        height: 125px;
+    }
+    .sec.five > h2 {
+        font-size: 2.4rem;
+    }
+    .sec.five > h3 {
+        font-size: 2.4rem;
+    }
+}
